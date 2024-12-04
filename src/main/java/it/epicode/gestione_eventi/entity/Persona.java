@@ -3,6 +3,7 @@ package it.epicode.gestione_eventi.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class Persona {
     private String email;
 
     @Column(name = "data_di_nascita", nullable = false)
-    private String dataDiNascita;
+    private LocalDate dataDiNascita;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
